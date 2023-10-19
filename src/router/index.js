@@ -4,6 +4,8 @@ import { useMovieStore } from '../stores';
 const Home = () => import('@/views/Home.vue');
 const SearchMovies = () => import('@/views/SearchMovies.vue');
 const WatchedMovies = () => import('@/views/WatchedMovies.vue');
+const Signup = () => import('@/views/Signup.vue');
+const Signin = () => import('@/views/Signin.vue');
 
 const history = createWebHistory();
 
@@ -26,6 +28,16 @@ const routes = [
     path: '/movies/watched',
     name: 'watched',
     component: WatchedMovies,
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: Signup,
+  },
+  {
+    path: '/signin',
+    name: 'signin',
+    component: Signin,
   },
 ];
 
